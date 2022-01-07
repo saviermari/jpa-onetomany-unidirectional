@@ -1,11 +1,13 @@
 package com.smari.server.dto;
 
+import java.io.Serializable;
 import java.util.List;
 
 /**
  * @author smari
  */
-public class PersonModel {
+public class PersonModel implements Serializable {
+    private static final long serialVersionUID = 1L;
     private Long id;
     private String firstName;
     private String lastName;

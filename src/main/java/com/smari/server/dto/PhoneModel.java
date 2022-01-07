@@ -1,9 +1,12 @@
 package com.smari.server.dto;
 
+import java.io.Serializable;
+
 /**
  * @author smari
  */
-public class PhoneModel {
+public class PhoneModel  implements Serializable {
+    private static final long serialVersionUID = 1L;
     private Long id;
     private String phoneNumber;
 
